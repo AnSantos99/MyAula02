@@ -8,9 +8,8 @@ namespace Cilindro
         {
             // Declarar variaveis
             string alturaS, raioS;
-            float alturaF, raioF;
-            float volume, area;
-            float pi = 3.1415926f;
+            double alturaF, raioF;
+            double volume, area;
 
             // Pedir altura
             Console.WriteLine("Introduz altura: ");
@@ -26,14 +25,19 @@ namespace Cilindro
             raioF = Convert.ToSingle(raioS);
 
             // Calcular o volume
-            volume = pi * raioF * raioF * alturaF;
+            volume = Math.PI * Math.Pow(raioF,2) * alturaF;
 
             // Calcular area superficial
-            area = 2 * pi * raioF * (raioF + alturaF);
+            area = 2 * Math.PI * raioF * (raioF + alturaF);
 
             // Mostrar resultados
             Console.WriteLine($"Volume é {volume:f3}");
-            //Console.WriteLine($"A area é {area:f3}");
+
+            /*
+             * Outra maneira de escrever um WriteLine formatado com espaceamento
+             * de 3 casas decimais.
+             * Console.WriteLine($"A area é {area:f3}");
+            */
             Console.WriteLine("A area é {0:f3}", area);
 
             Console.Read();
