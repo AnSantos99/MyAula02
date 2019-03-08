@@ -19,11 +19,11 @@ namespace VariasStrings
             //Ex2 Diferent outputs of strings
             int v1 = 1;
             int v2 = 3;
-            string personInfo = String.Format("Name is {0} age ={1}", "Ana", 23);
+            string info = String.Format("Name is {0} age ={1}", "Ana", 23);
             string placement = String.Format("First is {1} and {0}", v1, v2);
             string adds = $"{v1} mais {v2} = {v1 + v2}";
             Console.WriteLine("\nEx2 Strings");
-            Console.WriteLine("{1}{0}", personInfo, placement);
+            Console.WriteLine("{1}{0}", info, placement);
             Console.WriteLine(adds);
             Console.Read();
 
