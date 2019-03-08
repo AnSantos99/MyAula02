@@ -8,6 +8,7 @@ namespace VariasStrings
         {
             Console.OutputEncoding = Encoding.UTF8;
 
+            /*
             string welcome = "Hello World!\n";
             string line1 = "How\tare\tyou\n";
             string verbatim = @"It's a great day\u1416\n";
@@ -26,6 +27,19 @@ namespace VariasStrings
             Console.WriteLine("{1}{0}", info, placement);
             Console.WriteLine(adds);
             Console.Read();
+            */
+
+            //Ex3
+            double xx = 0.12345;
+            int ii = 18;
+
+            Console.WriteLine("{0,2:f}", xx);
+            Console.WriteLine("{0:p1}", xx);
+
+            Console.WriteLine("{0:x}", ii);
+            Console.WriteLine("{0:c}", ii);
+            Console.Read();
+
 
         }
     }
